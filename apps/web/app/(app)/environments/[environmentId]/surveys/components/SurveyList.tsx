@@ -67,7 +67,7 @@ export default async function SurveysList({ environmentId }: { environmentId: st
               <div className="delay-50 flex h-full items-center justify-center overflow-hidden rounded-md bg-gradient-to-br from-slate-900 to-slate-800 font-light text-white shadow transition ease-in-out hover:scale-105 hover:from-slate-800 hover:to-slate-700">
                 <div id="main-cta" className="px-4 py-8 sm:p-14 xl:p-10">
                   <PlusIcon className="stroke-thin mx-auto h-14 w-14" />
-                  Create Survey
+                  Crear Encuesta
                 </div>
               </div>
             </li>
@@ -88,7 +88,7 @@ export default async function SurveysList({ environmentId }: { environmentId: st
                       startIconClassName="mr-2"
                       text={
                         survey.type === "link"
-                          ? "Link Survey"
+                          ? "Link encuesta"
                           : survey.type === "web"
                           ? "In-Product Survey"
                           : ""

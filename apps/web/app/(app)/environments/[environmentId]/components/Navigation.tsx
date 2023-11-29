@@ -110,35 +110,35 @@ export default function Navigation({
   const navigation = useMemo(
     () => [
       {
-        name: "Surveys",
+        name: "Encuestas",
         href: `/environments/${environment.id}/surveys`,
         icon: FormIcon,
         current: pathname?.includes("/surveys"),
         hidden: false,
       },
       {
-        name: "People",
+        name: "Personas",
         href: `/environments/${environment.id}/people`,
         icon: CustomersIcon,
         current: pathname?.includes("/people"),
         hidden: false,
       },
       {
-        name: "Actions & Attributes",
+        name: "Acciones & Atributos",
         href: `/environments/${environment.id}/actions`,
         icon: FilterIcon,
         current: pathname?.includes("/actions") || pathname?.includes("/attributes"),
         hidden: false,
       },
       {
-        name: "Integrations",
+        name: "Integraciones",
         href: `/environments/${environment.id}/integrations`,
         icon: DashboardIcon,
         current: pathname?.includes("/integrations"),
         hidden: isViewer,
       },
       {
-        name: "Settings",
+        name: "Ajustes",
         href: `/environments/${environment.id}/settings/profile`,
         icon: SettingsIcon,
         current: pathname?.includes("/settings"),
